@@ -1,0 +1,133 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #660000;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcccc;
+}
+
+/* Generic page container */
+.page {
+  padding: 2rem 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Shared Heading Styles */
+.page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d00000;
+}
+
+.page p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Image Styles */
+.page img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Apply bg settings */
+.bg-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .page {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+}
+.bg-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* พื้นหลังเฉพาะหน้า Home */
+.home-bg {
+  background-image: url("https://mazdastories.com/static/3253141eb54e126da40d18b9b4b52ed2/9d72c/lemans1991017TM_RT_16_9.jpg");
+}
+.about-bg {
+  background-image: url("https://www.insidemazda.co.uk/wp-content/uploads/2015/05/mar84h1968_01_001.jpg");
+}
+.PRO-bg {
+  background-image: url("https://img.freepik.com/free-photo/dark-grunge-texture-background-with-scratches-stains_1048-18915.jpg?semt=ais_hybrid&w=740");
+}
+.CT-bg {
+  background-image: url("https://img.freepik.com/free-vector/realistic-carbon-fiber-texture-3d-background_1017-33439.jpg?w=360");
+}
